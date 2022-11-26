@@ -1,0 +1,523 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-aline-item-center {
+  display: flex;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.opacity {
+  opacity: 0.8;
+}
+
+.font-size {
+  font-size: 18px;
+}
+/* 
+1.Vij trí
+2.Kích thước (width , height)
+3.Màu sắc
+4.Kiểu dáng (Kiểu chữ, hình dạng ( tròn , vuông )
+*/
+
+#header {
+  height: 46px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+i.nav-down {
+  font-size: 12px;
+}
+
+#nav li {
+  display: inline-block;
+  padding: 0 24px;
+  position: relative;
+}
+
+#nav li:hover {
+  border-bottom: 2px solid red;
+  cursor: pointer;
+  transition:border-bottom ease-in 0.2s;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+
+#nav > li > a {
+  color: white;
+  text-decoration: none;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+#nav .subnav {
+  min-width: 160px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 100%;
+  color: #000;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li {
+  width: 100%;
+  list-style: none;
+  padding-left: 15px;
+}
+
+#nav .subnav li a {
+  text-decoration: none;
+  line-height: 38px;
+  color: #000;
+}
+
+i.search-icon,i.ti-menu  {
+  color: white;
+  line-height: 46px;
+  padding: 0 23px;
+  height: 100%;
+}
+.menu-mobile {
+  display: none;
+}
+
+
+#header #search-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#header .menu-mobile:hover {
+  background-color: #ccc;
+}
+#slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url(/Wed_TheBand/assets/images/anh1_slider.jpg) top center / contain no-repeat;
+  position: relative;
+  text-align: center;
+  background-size: contain;
+}
+
+#slider #item p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+#slider #item {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -50%);
+  bottom: 0;
+  color: #ccc;
+}
+
+#content {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+#content .section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+#content .section p {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.section p#sub-content {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.item {
+  display: flex;
+  padding: 45px 0px;
+}
+
+.item-content {
+  width: 33.3333%;
+  text-align: center;
+}
+
+.item-content p {
+  margin: 15px 0;
+}
+
+.item-content img {
+  width: 60%;
+  border-radius: 4px;
+}
+
+#tour {
+  background: #000;
+  height: 850px;
+}
+
+.container-tour {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  padding: 64px 16px;
+}
+
+.header-tour {
+  color: white;
+  text-align: center;
+}
+
+.header-tour h1 {
+  margin: 10px 0px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.header-tour p {
+  font-size: 15px;
+  margin: 25px 0px;
+  font-style: italic;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+ul.tour-month {
+  background: white;
+  margin-top: 45px;
+}
+
+ul.tour-month li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 16px;
+}
+
+span {
+  background: #f44336;
+  color: #ffffff;
+  padding: 2px 8px;
+  margin-left: 16px;
+}
+
+span#so {
+  background-color: #000;
+  color: #ccc;
+  float: right;
+  border-radius: 50%;
+}
+
+#where {
+  padding: 32px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.where-item {
+  background-color: white;
+  width: 245px;
+  height: 390px;
+}
+
+.new-york {
+  font-weight: bolder;
+}
+
+.ngay {
+  opacity: 0.6;
+}
+
+.where-item img {
+  width: 100%;
+  padding: 0px;
+}
+
+.where-item img:hover {
+  opacity: 0.8;
+}
+
+.where-item-content {
+  font-size: 15px;
+  padding: 0px 16px;
+  line-height: 38px;
+}
+
+.where-item-content button {
+  width: 107px;
+  height: 40px;
+  background-color: black;
+  margin-top: 15px;
+}
+
+.where-item-content button:hover {
+  background-color: #ccc;
+}
+
+.where-item-content button:hover a {
+  color: #000;
+}
+
+.where-item-conten p {
+  margin: 0px 15px;
+}
+
+.where-item-content button > a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 40px;
+}
+.button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.item-conten-place {
+  line-height: 28px;
+}
+
+#contact {
+  height: 460px;
+  background: white;
+}
+
+#contact .contact-container {
+  width: 800px;
+  max-width: 100%;
+  height: 460px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 64px 16px;
+}
+
+#contact .contact-container-header h2 {
+  text-align: center;
+  font-size: 30px; 
+  font-weight: 100; 
+  margin: 10px 0px;
+  opacity: 0.9;
+}
+
+#contact .contact-container-header p {
+  opacity: 0.4;
+  font-size: 15px;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+#contact .contact-container-body {
+  padding: 32px 0px;
+}
+
+.contact-container-body-content p{
+  margin-left: 16px;
+}
+
+.contact-container-body-content-line {
+  margin-bottom: 7px;
+}
+
+#contact form {
+  width: 384px;
+}
+
+.form-input-line1 {
+  height: 40px;
+  width: 183px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-input-line2 {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+.contact-container-body-button {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  float: right;
+}
+
+.contact-container-body-button:hover {
+  opacity: 0.6;
+  color: green;
+  cursor: pointer;
+}
+
+.img-map img {
+  max-width: 100%;
+  height: auto;
+}
+#footer {
+  background: #fff;
+  height: 217px;
+  padding: 64px 16px;
+  text-align: center;
+  line-height:2.3;
+}
+
+#footer i:hover {
+  opacity: 0.7;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-container-modal {
+    background-color: white;
+    width: 900px;
+    min-height: 300px;
+    position: relative;
+    animation: modalChuyenDong ease 0.5s;
+}
+
+.modal-close {
+  background-color: #009688;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover  {
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #ccc;
+}
+
+.modal #container-modal-header {
+  background-color: #009688;
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal #container-modal-header h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.modal #container-modal-header i {
+  font-size: 28px;
+  color: white;
+  padding: 0 8px;
+}
+
+.modal .modal-body {
+  padding: 16px;
+}
+
+.modal #footer-modal {
+  padding: 16px;
+}
+
+.modal-body label {
+  display: block;
+  font-size: 15px;
+  margin: 15px 0px;
+  font-weight: 500;
+}
+
+.modal-body input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.modal-body .buy-tickets {
+  margin: 16px 0px;
+  padding: 16px;
+  width: 100%;
+  background-color: #009688;
+  border: none;
+  color: white;
+}
+
+.modal-body .buy-tickets:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#footer-modal {
+  margin-bottom: 17px;
+  text-align: right;
+}
+
+@keyframes modalChuyenDong {
+  from {
+    opacity: 0;
+    transform: translateY(-140%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
